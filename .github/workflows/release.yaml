@@ -17,7 +17,7 @@ on:
       - "postgres-Dockerfile"
 
 env:
-  REGISTRY: xxf0512
+  REGISTRY: ghcr.io
 
 permissions:
   contents: read
