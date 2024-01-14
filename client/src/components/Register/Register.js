@@ -259,7 +259,7 @@ export class Register extends Component {
 			<Container>
 				<Paper className={classes.paper}>
 					<Typography className={classes.title} component="h5" variant="headline">
-						Register User
+						注册用户
 					</Typography>
 					<MuiDialogTitle>
 						{onClose ? (
@@ -279,7 +279,7 @@ export class Register extends Component {
 								fullWidth
 								id="user"
 								name="user"
-								label="User"
+								label="用户"
 								disabled={isLoading}
 								value={user.value}
 								onChange={e => this.handleChange(e)}
@@ -296,7 +296,7 @@ export class Register extends Component {
 								fullWidth
 								id="firstname"
 								name="firstname"
-								label="First name"
+								label="名字"
 								disabled={isLoading}
 								value={firstname.value}
 								onChange={e => this.handleChange(e)}
@@ -313,7 +313,7 @@ export class Register extends Component {
 								fullWidth
 								id="lastname"
 								name="lastname"
-								label="Last name"
+								label="姓氏"
 								disabled={isLoading}
 								value={lastname.value}
 								onChange={e => this.handleChange(e)}
@@ -330,7 +330,7 @@ export class Register extends Component {
 								fullWidth
 								id="email"
 								name="email"
-								label="E-mail address"
+								label="邮箱地址"
 								disabled={isLoading}
 								value={email.value}
 								onChange={e => this.handleChange(e)}
@@ -350,7 +350,7 @@ export class Register extends Component {
 								id="password"
 								type="password"
 								name="password"
-								label="Password"
+								label="密码"
 								disabled={isLoading}
 								value={password.value}
 								onChange={e => this.handleChange(e)}
@@ -370,7 +370,7 @@ export class Register extends Component {
 								id="password2"
 								type="password"
 								name="password2"
-								label="Password(confirm)"
+								label="密码(确认)"
 								disabled={isLoading}
 								value={password2.value}
 								onChange={e => this.handleChange(e)}
@@ -391,7 +391,7 @@ export class Register extends Component {
 								id="roles"
 								type="roles"
 								name="roles"
-								label="Roles"
+								label="角色"
 								disabled={isLoading}
 								value={roles.value}
 								onChange={e => this.handleChange(e)}
@@ -433,7 +433,7 @@ export class Register extends Component {
 						>
 							<Grid item>
 								<Button fullWidth variant="contained" color="primary" onClick={onClose}>
-									Cancel
+									取消
 								</Button>
 							</Grid>
 							<Grid item>
@@ -444,7 +444,7 @@ export class Register extends Component {
 									variant="contained"
 									color="primary"
 								>
-									Register
+									注册
 								</Button>
 							</Grid>
 						</Grid>

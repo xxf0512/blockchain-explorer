@@ -52,7 +52,7 @@ export class UsersPanal extends Component {
 								this.toggle('1');
 							}}
 						>
-							USERS
+							用户
 						</NavLink>
 					</NavItem>
 					<NavItem>
@@ -64,7 +64,7 @@ export class UsersPanal extends Component {
 								this.toggle('2');
 							}}
 						>
-							ADD USER
+							添加用户
 						</NavLink>
 					</NavItem>
 				</Nav>

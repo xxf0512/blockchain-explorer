@@ -402,7 +402,7 @@ export class Blocks extends Component {
 
 	reactTableSetup = classes => [
 		{
-			Header: 'Block Number',
+			Header: '区块编号',
 			accessor: 'blocknum',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -415,7 +415,7 @@ export class Blocks extends Component {
 			width: 150
 		},
 		{
-			Header: 'Channel Name',
+			Header: '通道名称',
 			accessor: 'channelname',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -427,7 +427,7 @@ export class Blocks extends Component {
 			filterAll: true
 		},
 		{
-			Header: 'Number of Tx',
+			Header: '交易数量',
 			accessor: 'txcount',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -440,7 +440,7 @@ export class Blocks extends Component {
 			width: 150
 		},
 		{
-			Header: 'Data Hash',
+			Header: '数据哈希',
 			accessor: 'datahash',
 			className: classes.hash,
 			Cell: row => (
@@ -463,7 +463,7 @@ export class Blocks extends Component {
 			filterAll: true
 		},
 		{
-			Header: 'Block Hash',
+			Header: '区块哈希',
 			accessor: 'blockhash',
 			className: classes.hash,
 			Cell: row => (
@@ -491,7 +491,7 @@ export class Blocks extends Component {
 			filterAll: true
 		},
 		{
-			Header: 'Previous Hash',
+			Header: '前块哈希',
 			accessor: 'prehash',
 			className: classes.hash,
 			Cell: row => (
@@ -519,7 +519,7 @@ export class Blocks extends Component {
 			width: 150
 		},
 		{
-			Header: 'Transactions',
+			Header: '交易',
 			accessor: 'txhash',
 			className: classes.hash,
 			Cell: row => (
@@ -559,7 +559,7 @@ export class Blocks extends Component {
 			filterAll: true
 		},
 		{
-			Header: 'Size(KB)',
+			Header: '大小(KB)',
 			accessor: 'blksize',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -599,7 +599,7 @@ export class Blocks extends Component {
 			<div>
 				<div className={`${classes.filter} row searchRow`}>
 					<div className={`${classes.filterElement} ${classes.filterDate} col-md-3`}>
-						<label className="label">From</label>
+						<label className="label">从</label>
 						<DatePicker
 							id="from"
 							selected={this.state.from}
@@ -623,7 +623,7 @@ export class Blocks extends Component {
 						/>
 					</div>
 					<div className={`${classes.filterElement} ${classes.filterDate} col-md-3`}>
-						<label className="label">To</label>
+						<label className="label">到</label>
 						<DatePicker
 							id="to"
 							selected={this.state.to}
@@ -662,7 +662,7 @@ export class Blocks extends Component {
 							shouldToggleOnHover={false}
 							selected={this.state.orgs}
 							options={this.state.options}
-							selectAllLabel="All Orgs"
+							selectAllLabel="所有机构"
 							onSelectedChanged={value => {
 								this.handleMultiSelect(value);
 							}}
@@ -683,7 +683,7 @@ export class Blocks extends Component {
 								});
 							}}
 						>
-							Search
+							搜索
 						</Button>
 					</div>
 					<div className="col-md-1">
@@ -694,7 +694,7 @@ export class Blocks extends Component {
 								this.handleClearSearch();
 							}}
 						>
-							Reset
+							复位
 						</Button>
 					</div>
 					<div className="col-md-1">
@@ -703,7 +703,7 @@ export class Blocks extends Component {
 							color="secondary"
 							onClick={() => this.setState({ filtered: [], sorted: [] })}
 						>
-							Clear Filter
+							清除过滤条件
 						</Button>
 					</div>
 				</div>

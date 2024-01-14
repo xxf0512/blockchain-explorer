@@ -111,7 +111,7 @@ export class ChaincodeMetaDataView extends Component {
 								<Table striped hover responsive className="table-striped">
 									<tbody>
 										<tr>
-											<th style={reads}>Info:</th>
+											<th style={reads}>信息:</th>
 											<td className={classes.JSONtree}>
 												<JSONTree
 													data={chaincodeMetaData.info}
@@ -121,7 +121,7 @@ export class ChaincodeMetaDataView extends Component {
 											</td>
 										</tr>
 										<tr>
-											<th style={writes}>Contracts:</th>
+											<th style={writes}>合约:</th>
 											<td className={classes.JSONtree}>
 												<JSONTree
 													data={chaincodeMetaData.contracts}
@@ -131,7 +131,7 @@ export class ChaincodeMetaDataView extends Component {
 											</td>
 										</tr>
 										<tr>
-											<th style={reads}>Components:</th>
+											<th style={reads}>组件:</th>
 											<td className={classes.JSONtree}>
 												<JSONTree
 													data={chaincodeMetaData.components}

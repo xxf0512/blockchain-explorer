@@ -31,7 +31,7 @@ const styles = theme => ({
 	up: {
 	  backgroundColor: "green"
 	}
-  
+
   });
 
 const Status = styled.span`
@@ -75,13 +75,13 @@ const PeersHealth = ({ peerStatus, classes }) => {
 	  };
 	const columnHeaders = [
 		{
-			Header: 'Peer Name',
+			Header: '节点名称',
 			accessor: 'server_hostname',
 			filterAll: false,
 			className: classes.center
-		}, 
+		},
 		{
-			Header: "Status",
+			Header: "状态",
 			accessor: "status",
 			filterAll: false,
 			className: classes.center,
