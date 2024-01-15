@@ -333,7 +333,7 @@ export class DashboardView extends Component {
 								<ChartStats />
 							</Card>
 							<Card className={`${classes.section} ${classes.center}`}>
-								<h5>按机构交易数量统计</h5>
+								<h5>按组织交易数量统计</h5>
 								<hr />
 								<div className={classes.pie}>
 									<OrgPieChart transactionByOrg={transactionByOrg} />

@@ -61,7 +61,7 @@ const PeersHealth = ({ peerStatus, classes }) => {
 		return (
 		  <Tooltip
 			title={
-			  title === "DOWN" ? "Offline" : title === "UP" ? "Online" : "Fetching Status"
+			  title === "DOWN" ? "离线" : title === "UP" ? "在线" : "Fetching Status"
 			}
 			placement="top"
 		  >

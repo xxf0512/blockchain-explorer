@@ -95,7 +95,7 @@ export class TransactionView extends Component {
 							<Card className={modalClasses.card}>
 								<CardTitle className={modalClasses.title}>
 									<FontAwesome name="list-alt" className={classes.listIcon} />
-									Transaction Details
+									交易详情
 									<button
 										type="button"
 										onClick={this.handleClose}
@@ -129,11 +129,11 @@ export class TransactionView extends Component {
 												<td>{transaction.payload_proposal_hash}</td>
 											</tr>
 											<tr>
-												<th>创建机构MSP:</th>
+												<th>创建组织MSP:</th>
 												<td>{transaction.creator_msp_id}</td>
 											</tr>
 											<tr>
-												<th>背书机构MSP:</th>
+												<th>背书节点MSP:</th>
 												<td>{transaction.endorser_msp_id}</td>
 											</tr>
 											<tr>
@@ -196,7 +196,7 @@ export class TransactionView extends Component {
 					<div>
 						<CardTitle className={modalClasses.title}>
 							<FontAwesome name="list-alt" className={classes.listIcon} />
-							Transaction Details
+							交易详情
 							<button
 								type="button"
 								onClick={this.handleClose}

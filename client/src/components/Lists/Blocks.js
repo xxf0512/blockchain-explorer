@@ -249,10 +249,10 @@ export class Blocks extends Component {
 
 	handleCustomRender(selected, options) {
 		if (selected.length === 0) {
-			return 'Select Orgs';
+			return '选择组织';
 		}
 		if (selected.length === options.length) {
-			return 'All Orgs Selected';
+			return '选择所有组织';
 		}
 
 		return selected.join(',');
@@ -662,7 +662,7 @@ export class Blocks extends Component {
 							shouldToggleOnHover={false}
 							selected={this.state.orgs}
 							options={this.state.options}
-							selectAllLabel="所有机构"
+							selectAllLabel="所有组织"
 							onSelectedChanged={value => {
 								this.handleMultiSelect(value);
 							}}
@@ -736,7 +736,7 @@ export class Blocks extends Component {
 							style={{ width: '50vw' }}
 						>
 							<div style={{ whiteSpace: 'no-wrap', alignSelf: 'center' }}>
-								Block No:
+								区块序号:
 							</div>
 							<div className={classes.htinputs}>
 								<TextField
@@ -821,7 +821,7 @@ export class Blocks extends Component {
 						page={this.state.page}
 						sx={tablePaginationStyle}
 						rowsPerPage={this.state.rowsPerPage}
-						labelDisplayedRows={() => `Page ${this.state.page + 1} of ${noOfPages}`}
+						labelDisplayedRows={() => `页号 ${this.state.page + 1} / ${noOfPages}`}
 						rowsPerPageOptions={rowsPerPageOptions}
 						onRowsPerPageChange={this.handleRowsChange}
 						onPageChange={this.handlePageChange}
@@ -832,7 +832,7 @@ export class Blocks extends Component {
 							disabled: this.state.page + 1 === noOfPages
 						}}
 						className={classes.tablePagination}
-						labelRowsPerPage={'Items per page'}
+						labelRowsPerPage={'每页数量'}
 					/>
 				)}
 

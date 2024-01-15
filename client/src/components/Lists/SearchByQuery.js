@@ -53,9 +53,9 @@ const SearchByQuery = props => {
 	let { txnList } = props;
 	let { blockSearch } = props;
 	const classes = useStyles();
-	const options = ['Txn Hash', 'Block No'];
+	const options = ['交易哈希', '区块序号'];
 	const [search, setSearch] = useState('');
-	const [selectedOption, setSelectedOption] = useState('Txn Hash');
+	const [selectedOption, setSelectedOption] = useState('交易哈希');
 	const [dialogOpen, setDialogOpen] = useState(false);
 	const [error, setError] = useState('');
 	const [searchClick, setSearchClick] = useState(false);
@@ -69,9 +69,9 @@ const SearchByQuery = props => {
 	}, [searchClick]);
 
 	const searchData = async () => {
-		if (selectedOption === 'Txn Hash') {
+		if (selectedOption === '交易哈希') {
 			await props.getTxnList(props.currentChannel, search);
-		} else if (selectedOption === 'Block No') {
+		} else if (selectedOption === '区块序号') {
 			await props.getBlockSearch(props.currentChannel, search);
 		}
 		setSearchClick(true);
@@ -81,9 +81,9 @@ const SearchByQuery = props => {
 		e.preventDefault();
 		if (
 			!search ||
-			(selectedOption === 'Block No' && (isNaN(search) || search.length > 9))
+			(selectedOption === '区块序号' && (isNaN(search) || search.length > 9))
 		) {
-			setError('Please enter valid txn hash/block no');
+			setError('请输入合法的交易哈希/区块序号');
 			return;
 		}
 		searchData();
@@ -112,7 +112,7 @@ const SearchByQuery = props => {
 					}
 				}}
 				onKeyPress={e => e.key === 'Enter' && handleSubmit(e)}
-				label=" Search by Txn Hash / Block"
+				label=" 根据 交易哈希 / 区块序号 搜索"
 				variant="outlined"
 				fullWidth
 				error={error}

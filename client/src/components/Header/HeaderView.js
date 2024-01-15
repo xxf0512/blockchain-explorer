@@ -623,13 +623,13 @@ export class HeaderView extends Component {
 														onClick={() => this.registerOpen()}
 													>
 														<FontAwesome name="user-plus" />
-														User management
+														用户管理
 													</div>
 												</DropdownItem>
 												<DropdownItem divider />
 												<DropdownItem>
 													<div className={classes.logoutIcon} onClick={() => this.logout()}>
-														<FontAwesome name="sign-out" /> Sign out
+														<FontAwesome name="sign-out" /> 登出
 													</div>
 												</DropdownItem>
 											</DropdownMenu>

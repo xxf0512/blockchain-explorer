@@ -69,7 +69,7 @@ export class ChaincodeMetaDataView extends Component {
 						<div>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="list-alt" className={classes.listIcon} />
-								Chaincode Details
+								链码详情
 								<button
 									type="button"
 									onClick={this.handleClose}
@@ -98,7 +98,7 @@ export class ChaincodeMetaDataView extends Component {
 						<Card className={modalClasses.card}>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="list-alt" className={classes.listIcon} />
-								Chaincode Details
+								链码详情
 								<button
 									type="button"
 									onClick={this.handleClose}

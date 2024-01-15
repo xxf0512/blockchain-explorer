@@ -32,7 +32,7 @@ export class BlockView extends Component {
 						<Card className={modalClasses.card}>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="cube" />
-								Block Details
+								区块详情
 							</CardTitle>
 							<CardBody className={modalClasses.body}>
 								<span>
@@ -52,7 +52,7 @@ export class BlockView extends Component {
 						<Card className={modalClasses.card}>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="cube" className={classes.cubeIcon} />
-								Block Details
+								区块详情
 								<button
 									type="button"
 									onClick={this.handleClose}
